@@ -1,0 +1,67 @@
+{%extends "base.html"%}
+{% load static %}
+{% block content %}
+
+<div class="container">
+        <h1 style="text-align:center;margin-bottom:40px;margin-top:40px;color:rgba(0, 0, 111, 1)">About Us</h1>
+        <p class="h5" style="text-align:center;margin-bottom:40px;margin-top:40px;color:rgba(0, 0, 111, 1)">GreatMindz Tutors is a tutoring services company with a mission to help learners reach their best</p>
+        <div style="width:80%; margin-bottom: 20px;text-align: start;">
+            <p class="justify-content-start"style="margin-bottom:40px;margin-top:40px;margin-left:250px;color:rgba(0, 0, 111, 1)" >
+                GreatMindz Tutors connects parents and learners with brilliant tutors to help them achieve their academic goals.
+                We believe education is key to success and as such are committed to providing
+                the best services. Our tutors are carefully selected and only the best are brought into the team. 
+                This ensures that your child gets the best tutoring possible and their confidence and performance get a massive boost. 
+                </p>
+        </div>
+        <div>
+            <h1 style="text-align:center;margin-bottom:20px;margin-top:40px;color:rgba(0, 0, 111, 1)">Our Mission</h1>
+            <h6 class="justify-content-start"style="margin-bottom:40px;margin-top:20px;margin-left:250px;color:rgba(0, 0, 111, 1)" >
+              To provide high quality and effective tutoring services that drive change and ensure a better future for learners.             
+            </h6>
+        </div>
+
+        <div>
+            <h1 style="text-align:center;margin-bottom:20px;margin-top:40px;color:rgba(0, 0, 111, 1)">Our Vision</h1>
+            <h6 class="justify-content-start"style="margin-bottom:40px;margin-top:20px;margin-left:250px;color:rgba(0, 0, 111, 1)" >
+              To be a leading tutoring services platform trusted by parents to empower learners to achieve academic excellence.              
+            </h6>
+        </div>
+
+        <div>
+            <h1 style="text-align:center;margin-bottom:40px;margin-top:40px;color:rgba(0, 0, 111, 1)">Why do parents trust us?</h1>
+            <div class="d-flex justify-content-around align-items-center">               
+                <div class="card border-secondary mb-3" style="width: 25rem;height:25rem">
+                  <div style="color:white; background-color: rgb(30, 160, 100);" class="card-header h3">Why Choose GreatMindz?</div>
+                  <div style="color:white; background-color: rgb(30, 160, 100);"class="card-body">                    
+                    <p class="card-text">With a lot of tutoring companies out there, it can be confusing as to which company to choose.
+                      You can be sure that we are the best tutoring company out there.
+                    </p>                   
+                  </div>
+                </div>
+                <div class="card border-secondary mb-3" style="width: 20rem; height:22rem">   
+                  <img style="height:60px;width:60px; position:relative;left:130px" src="{%static 'images/award.png' %}"> 
+                  <div class="card-header h3">High quality tutors</div>              
+                  <div class="card-body">                    
+                    <p class="card-text">We have a vigourous screeening process which ensures that only the best tutors
+                      are part of our team
+                    </p>                    
+                  </div>
+                </div>
+                <div class="card border-secondary" style="width: 20rem;height:22rem">  
+                  <img style="height:60px;width:60px; position:relative;left:130px" src="{%static 'images/help-desk.png' %}"> 
+                  <div class="card-header h3">Excellent support</div>                
+                  <div class="card-body">                    
+                    <p class="card-text">Our hardoworking and friendly staff will ensure that all your problems are solved
+                    </p>                    
+                  </div>
+                </div>
+              </div>             
+        </div>
+        <a class="btn btn-primary mt-4" style="padding:10px 50px 10px 50px; margin-left:550px; font-weight: 600; font-size:5.6"
+        href="{% url 'getatutor' %}">GET A TUTOR</a>
+    
+    
+</div>
+
+
+{% endblock %}

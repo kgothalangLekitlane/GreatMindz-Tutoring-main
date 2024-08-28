@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content%}
+
+
+
+<div class="container">
+    <h1 class="mb-4">Get a tutor</h1>
+    <p class="mb-3">Fill the form below with the necessary information to kickstart your search for a perfect tutor.</p>
+    <form action="" method="POST" style="width:50%">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Submit" class="btn btn-success">
+    </form>
+</div>
+
+{% endblock %}
+
+

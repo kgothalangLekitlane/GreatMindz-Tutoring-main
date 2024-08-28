@@ -1,0 +1,147 @@
+{%extends "base.html"%}
+{% load static %}
+{% block content %}
+
+<div class=container>
+    <div class="d-flex flex-row justify-content-around mb-5">
+          <div >
+              <h3 style=>Help others while making extra money</h3><br>    
+              <h1 style=font-size:5rem>Become a Tutor with GreatMindz</h1>
+              <a class="btn btn-primary mt-4" style="padding:10px 40px 10px 40px; margin-left:10px; font-weight: 600;" 
+              href="{% url 'tutorapplication' %}">BECOME A TUTOR</a> 
+          </div>
+          <div >
+              <img src="{% static 'images/becometutor image.jpg' %}" style="max-width:100%; margin-left:60px; border-radius:10px">
+          </div>
+    </div>    
+    <h6>If you are a tutor, sign in below</h6>
+    <a class="btn btn-primary" style="padding:10px 50px 10px 50px; margin-left: 2px;
+    font-weight:700;" href="{% url 'login' %}">LOGIN</a>
+
+    <div class="mt-5 mb-5">
+        <p class="text-center text-primary" style="font-size:1.5rem">
+          We do all the hard work of finding tutoring jobs for you and handle all the administration.<br>
+          All you have to do is do what you love - Tutoring
+        </p>
+    </div>
+
+
+    <div class="d-flex flex-column align-items-center" style="margin-top:150px">
+        <div class="d-flex flex-row mb-5">
+           <div>            
+            <h1>Make a positive difference</h1><br>
+            <p>Help others improve their academic performance and make<br> a positive meaningful difference in their lives</p>  
+           </div>
+           <div>
+            <img src = "{% static 'images/graduate.png' %}" style="width:40%;height:80%; margin-left:200px">
+           </div>                  
+        </div>
+        <div class="d-flex flex-row mb-5" style="margin-top:80px">
+            <div>                
+                <h1>Earn while you study</h1><br>
+                <p>Make some extra money to help boost your budget. Make up to R200 per hour as a tutor</p>  
+            </div>
+            <div>
+              <img src = "{% static 'images/salary.png' %}" style="width:40%;height:80%; margin-left:200px">  
+            </div>                  
+        </div>
+        <div class="d-flex flex-row" style="margin-top:80px">
+          <div>
+              <h1>Boost your CV</h1><br>
+              <p>Being a tutor involves the use of soft skills such as communication, organisation <br> which are great skills 
+                to be added to your CV
+              </p>  
+          </div>
+          <div>
+            <img src = "{% static 'images/cv.png' %}" style="width:40%;height:80%; margin-left:200px">
+          </div>                  
+        </div>
+    </div>
+
+
+    <div id="what our tutors say">
+        <h1 class="text-center mb-5 mt-5">What our tutors say</h1>
+        <div class="d-flex flex-row justify-content-around container-fluid">
+            <div id="tutor 1" class="card" style="width: 25rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tshidiso</h5><br>
+                  <p class="card-text">GreatMindz Tutors is a great company to be a part of. They make sure that you get all the necessary
+                     support you need as a tutor and help to make your lessons as smooth as possible. </p>
+                
+                </div>
+              </div>
+              <div id="tutor 1" class="card" style="width: 25rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Matthew</h5><br>
+                  <p class="card-text">I absolutely being a tutor and making a difference and GreatMindz Tutors has helped me achieve that.
+                    It is wonderful to be a part of an organisation that cares for people and ensures that they are treated well.
+                  </p>
+                  
+                </div>
+              </div>
+              <div id="tutor 1" class="card" style="width: 25rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Arya</h5><br>
+                  <p class="card-text">GreatMindz Tutors has given me a wonderful opportunity to tutor a variety of subjects. It is a great
+                    part time job as it is flexible and ideal alongside studying at university.</p>                  
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <div id = "FAQ" class="mt-5 mb-5">
+      <h1 class="text-center mb-5">Frequently Asked Questions</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              How do I become a tutor?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              To become a tutor, you just have to apply on our website and fill in the required information. You will then have to provide the necessary
+              documentation and upon approval, you will be invited to a video interview. After being successful, you will then be on our system.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Who can become a tutor?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              How much money can I make as a tutor?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+        <h3 class="text-center">Ready to join our awesome team?</h3>
+        <a class="btn btn-primary mt-4" style="padding:10px 40px 10px 40px; margin-left:530px; font-weight: 600;" 
+        href="{% url 'tutorapplication' %}">BECOME A TUTOR</a>
+    </div>
+       
+</div>
+
+{% endblock %}
